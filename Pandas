@@ -1,0 +1,32 @@
+#############Checking the version
+import pandas as pd
+
+pd.__version__
+
+###############import a data set in python
+data_frame = pd.read_csv("name_of_the_file.csv")
+
+##########Creating a dataframe
+classes = pd.Series(["Mathematics","Chemistry","Physics","History","Geography","German"])
+
+grades  = pd.Series([90,54,77,22,25])
+
+
+pd.DataFrame({"Classes": classes, "Grades": grades})
+
+##################Slicing a dataframe
+Grades = 
+
+Report_Card.loc[(Report_Card["Name"] == "Benjamin Duran"),  
+
+               ["Lectures","Grades","Credits","Retake"]]
+               
+Sofia_Grades = Report_Card.iloc[6:12,2:]
+
+or else:
+
+Sofia_Grades = Report_Card.iloc[[6,7,8,9,10,11],[2,3,4,5]]
+
+Sofia_Grades = Report_Card.iloc[[6,7,8,9,10,11],[2,3,4,5]]
+Sofia_Grades = Report_Card.iloc[6:12,2:]
+Sofia_Grades = Report_Card.iloc[[9,10,11,6,7,8],[5,4,3,2]]
